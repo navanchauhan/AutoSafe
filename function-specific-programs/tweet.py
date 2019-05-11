@@ -2,12 +2,12 @@
 import tweepy
 
 #twitter application credentials
-consumer_key="knQFpTnjuSvr6OxYwebt3wyrd"
-consumer_secret="Mhex3oRkmaF7lD3hoMvHpAD6ctW0ugKYCopTlhc0JzOLOMIZ0w"
+consumer_key="addYours"
+consumer_secret="addYours"
 
 #twitter user credentials
-access_token="2846631344-wEozinvHfEIFxFVy51I6te8SrN5OTFtU00wxsiz"
-access_token_secret="Nfx1U8a2TjAQXFLBrJIyy2p36sjBGAWFIthLc1cIoI56U"
+access_token="AddYours"
+access_token_secret="AddYours"
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
@@ -28,10 +28,10 @@ def get_api(cfg):
 def main():
   # Fill in the values noted in previous step here
   cfg = { 
-    "consumer_key"        : "knQFpTnjuSvr6OxYwebt3wyrd",
-    "consumer_secret"     : "Mhex3oRkmaF7lD3hoMvHpAD6ctW0ugKYCopTlhc0JzOLOMIZ0w",
-    "access_token"        : "2846631344-wEozinvHfEIFxFVy51I6te8SrN5OTFtU00wxsiz",
-    "access_token_secret" : "Nfx1U8a2TjAQXFLBrJIyy2p36sjBGAWFIthLc1cIoI56U" 
+    "consumer_key"        : consumer_key,
+    "consumer_secret"     : consumer_secret,
+    "access_token"        : access_token,
+    "access_token_secret" : access_token_secret 
     }
 
   api = get_api(cfg)
