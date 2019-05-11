@@ -30,6 +30,10 @@ import requests
 ######################
 
 radius = str(100) # Radius for maxspeed function. taken as a string because gets concatenated in the function
+consumer_key = ""
+consumer_secret = ""
+access_token = ""
+access_token_secret = ""
 
 ################
 # Dummy Values #
@@ -83,10 +87,10 @@ def get_api(cfg):
 
 def tweet():
     cfg = { 
-        "consumer_key"        : "knQFpTnjuSvr6OxYwebt3wyrd",
-        "consumer_secret"     : "Mhex3oRkmaF7lD3hoMvHpAD6ctW0ugKYCopTlhc0JzOLOMIZ0w",
-        "access_token"        : "2846631344-wEozinvHfEIFxFVy51I6te8SrN5OTFtU00wxsiz",
-        "access_token_secret" : "Nfx1U8a2TjAQXFLBrJIyy2p36sjBGAWFIthLc1cIoI56U" 
+        "consumer_key"        : consumer_key,
+        "consumer_secret"     : consumer_secret,
+        "access_token"        : access_token,
+        "access_token_secret" : access_token_secret 
         }
 
     api = get_api(cfg)
