@@ -335,11 +335,8 @@ def brakes():
 #####################################################
 
 parser = argparse.ArgumentParser()
-FUNCTION_MAP = {'overspeed' : speedlim,
-                'sleep-detector' : sleepiness,
-                'sudden-braking' : brakes,
-                'drunk' : drunk }
-parser.add_argument('function', choices=FUNCTION_MAP.keys())
+FUNCTION_MAP = {'overspeed' : speedlim, 'sleep-detector' : sleepiness, 'sudden-braking' : brakes, 'drunk' : drunk }
+parser.add_argument('function', choices=list(FUNCTION_MAP))
 args = parser.parse_args()
 func = FUNCTION_MAP[args.function]
 func()
