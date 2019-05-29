@@ -11,3 +11,9 @@ A Cross-Platform & Modular Road Safety Toolkit
 ## Screenshots
 
 <img src="main.png">
+
+## License
+
+The project is licensed under GNU GPLv3 for every type of use case except Commercial Use.  
+
+Commercial use is only allowed upon explicit permission from the Author
