@@ -318,7 +318,7 @@ def speedlim():
         while int(carSpeed) <= int(speedLimit):
             carSpeedDummy = open("./files/carSpeed.txt", "r")
             carSpeed = carSpeedDummy.read()
-            print("Under the Speed Limit")
+            print("Under the Speed Limit with a speed of ", carSpeed)
             time.sleep(5)
 
 ##################
