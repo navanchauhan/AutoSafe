@@ -4,6 +4,7 @@ Modular Road-Safety Toolkit
 """
 #pylint: disable=C0103,C0111
 import argparse
+import datetime
 import time
 import overpy
 import simplejson as sjson
@@ -99,9 +100,13 @@ def tweetMe():
     url = 'https://developers.zomato.com/api/v2.1/geocode'
     response = requests.get(url, headers=headers, params=params)
     loc = response.json()['location']['title']
-    tweet = ("Stay Alert! Sudden braking at: ", loc)
-    status = api.update_status(status=tweet)
-    print(status)
+    now = datetime.datetime.now()
+    now = str(now)
+    tweetMsg = "Stay Alert! Sudden braking at: ", loc, "on", now
+    api.update_status(status=tweetMsg)
+    #print(status)
+    print(tweetMsg)
+    exit
 
 ################################
 # Fetching Details from Zomato #
